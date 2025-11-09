@@ -297,4 +297,8 @@ header button {
         width: 100%;
         top: 100px;
     }
+    #addtobaag_button,#favorite{
+        width:100%;
+    }
 }
+
