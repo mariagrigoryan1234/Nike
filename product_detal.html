@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Nike Dunk Low Retro</h1>
+        </div>
+        <ul>
+            <li><button id="shopbagbtn"><i class="fa-solid fa-bag-shopping"></i></button></li>
+            <li><button id="likebtn"><i class="fa-solid fa-heart"></i></button></li>
+        </ul>
+    </header>
+    <div class="shopbag">
+      <div>
+        <h1>shopbag</h1>
+        <button id="closshopbag"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <ul id="shopbagproducts"></ul>
+    </div>
+
+    <div class="likebox">
+        <div>
+            <h1>liked Products</h1>
+            <button id="closelikebox"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <ul id="likedproducts"></ul>
+    </div>
+
+    <div class="detal_kontiner">
+        <div class="detalimg">
+            <ul id="gallery_box"></ul>
+            <img id="mainimg">
+        </div>
+        <div class="detalinfo">
+            <h1 id="name"></h1>
+            <h4 id="category"></h4>
+            <div>
+                <span id="newprice"></span>
+                <del> <span id="oldprice"></span></del>
+            </div>
+            <h4>colors <span id="colors"></span></h4>
+            <div class="sizetile"><span>Select Size</span><span><svg aria-hidden="true" focusable="false"
+                        viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+                        <path stroke="currentColor" stroke-width="1.5"
+                            d="M21.75 10.5v6.75a1.5 1.5 0 01-1.5 1.5H3.75a1.5 1.5 0 01-1.5-1.5V10.5m3.308-2.25h12.885">
+                        </path>
+                        <path stroke="currentColor" stroke-width="1.5"
+                            d="M15.79 5.599l2.652 2.65-2.652 2.653M8.21 5.599l-2.652 2.65 2.652 2.653M17.25 19v-2.5M12 19v-2.5M6.75 19v-2.5">
+                        </path>
+                    </svg>Size Guide</span></div>
+            <ul id="sizes"></ul>
+            <button id="addtobaag_button">Add to bag</button>
+            <button id="favorite"> Favorite<i class="fa-regular fa-heart"></i></button>
+            <p id="desc"></p>
+            <h1 id="openreviews">Reviews(2)</h1>
+            <ul id="comments"></ul>
+        </div>
+    </div>
+
+
+    <script src="./productdetal.js"></script>
+
+
+</body>
+
+</html>
