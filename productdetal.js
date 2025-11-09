@@ -51,11 +51,13 @@ var addtobaag_button = document.getElementById('addtobaag_button')
 var favorite = document.getElementById('favorite')
 
 addtobaag_button.onclick = function(){
-    localStorage.setItem('shopcartproduct',JSON.stringify(currentproduct))
+    localStorage.setItem('shopcartproduct',JSON.stringify(currentproduct));
+    window.location.reload();
 }
 
 favorite.onclick = function(){
-localStorage.setItem('likedproduct', JSON.stringify(currentproduct))
+localStorage.setItem('likedproduct', JSON.stringify(currentproduct));
+    window.location.reload();
 }
 
 
@@ -138,4 +140,5 @@ document.querySelector('#likedproducts').innerHTML = `
 <span id="prodprice">$${prodprice}</span>
 </div>
 </li>
+
 `
